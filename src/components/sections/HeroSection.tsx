@@ -16,7 +16,7 @@ export function HeroSection({
   onScrollDown,
 }: HeroSectionProps) {
   return (
-    <section className="h-screen flex items-center justify-center bg-background snap-start relative overflow-hidden">
+    <section className="min-h-svh flex items-center justify-center bg-background snap-start relative overflow-hidden">
       {/* Background Image */}
       {/* <img
 				src="/hero-bg.png"

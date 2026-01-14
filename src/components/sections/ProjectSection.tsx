@@ -68,7 +68,7 @@ export function ProjectSection({
 
   return (
     <section
-      className="h-screen flex items-center justify-center bg-background snap-start relative overflow-hidden"
+      className="min-h-svh flex items-center justify-center bg-background snap-start relative overflow-hidden"
       data-theme={variant}
     >
       <div
