@@ -20,7 +20,7 @@ import { useActiveSection } from "@/hooks/useActiveSection";
 export const Route = createFileRoute("/")({ component: App });
 
 function App() {
-  const { activeSection, scrollToSection } = useActiveSection();
+  // const { activeSection, scrollToSection } = useActiveSection();
 
   return (
     <div className="relative">
@@ -30,12 +30,15 @@ function App() {
 				onNavigate={scrollToSection}
 			/> */}
 
-      <HeroSection {...heroData} onScrollDown={() => scrollToSection(1)} />
+      <HeroSection
+        {...heroData}
+        //  onScrollDown={() => scrollToSection(1)}
+      />
 
-      <ProjectSection {...p33rFinance} />
+      {/* <ProjectSection {...p33rFinance} />
       <ProjectSection {...xMoney} />
       <ProjectSection {...gcashGLife} />
-      <ProjectSection {...xloadIntro} />
+      <ProjectSection {...xloadIntro} /> */}
 
       {/* <FeatureCardSection {...xloadGames} /> */}
       {/* <AppShowcaseSection {...xloadApp} /> */}

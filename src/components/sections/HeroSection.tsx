@@ -1,11 +1,11 @@
-import { ChevronDown } from "lucide-react";
+// import { ChevronDown } from "lucide-react";
 
 interface HeroSectionProps {
   greeting?: string;
   name: string;
   title: string;
   description: string;
-  onScrollDown: () => void;
+  // onScrollDown: () => void;
 }
 
 export function HeroSection({
@@ -13,7 +13,7 @@ export function HeroSection({
   name,
   title,
   description,
-  onScrollDown,
+  // onScrollDown,
 }: HeroSectionProps) {
   return (
     <section className="min-h-svh flex items-center justify-center bg-background snap-start relative overflow-hidden">
@@ -41,14 +41,14 @@ export function HeroSection({
         </div>
       </div>
 
-      <button
+      {/* <button
         type="button"
         onClick={onScrollDown}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce"
         aria-label="Scroll to next section"
       >
         <ChevronDown className="w-8 h-8 text-muted-foreground" />
-      </button>
+      </button> */}
     </section>
   );
 }
