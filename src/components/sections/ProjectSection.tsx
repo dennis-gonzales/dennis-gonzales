@@ -45,14 +45,23 @@ export function ProjectSection({
 
   const imageBlock = (
     <div
-      className={`relative aspect-video rounded-xl overflow-hidden border border-slate-800 bg-slate-900 ${
+      className={`relative aspect-video rounded-xl overflow-hidden border border-slate-800 bg-slate-900/50 ${
         imagePosition === "left" ? "order-2 lg:order-1" : ""
       }`}
     >
+      {/* Blurred background */}
+      <div className="absolute inset-0">
+        <img
+          src={image.src}
+          alt=""
+          className="w-full h-full object-cover blur-2xl scale-110 opacity-60"
+        />
+      </div>
+      {/* Main image */}
       <img
         src={image.src}
         alt={image.alt}
-        className="w-full h-full object-contain"
+        className="w-full h-full object-contain relative z-10 drop-shadow-2xl"
       />
     </div>
   );
